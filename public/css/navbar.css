@@ -1,0 +1,5 @@
+#navbar {
+  display: grid;
+  align-items: center;
+  background-color: var(--primary-color);
+}

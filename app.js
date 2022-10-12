@@ -3,7 +3,9 @@ const session = require('express-session');
 const path = require('path');
 require('dotenv/config');
 
-const frontPage = require('./routes/index');
+const frontPage = require('./routes');
+const loginPage = require('./routes/login');
+const registerPage = require('./routes/register');
 
 const app = express();
 
@@ -15,6 +17,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use('/', frontPage);
+app.use('/login', loginPage);
+app.use('/register', registerPage);
 
 app.use(session({
   secret: process.env.SESSION_SECRET,

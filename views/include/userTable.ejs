@@ -1,0 +1,25 @@
+<table>
+  <tr>
+    <td>ID</td><td>USERNAME</td><td>EMAIL</td><td>PASSWORD</td><td>DELETE</td>
+  </tr>
+  <% for (let i = 0; i < users.length; i += 1) { %> 
+    <tr>
+      <td><%= users[i].id %></td>
+      <td><%= users[i].username %></td>
+      <td><%= users[i].email %></td>
+      <td><%= users[i].password %></td>
+      <td>
+        <form action="/deleteUser" method="post">
+          <button type="submit">DELETE</button>
+          <input type="hidden" name="idUser" value="<%= users[i].id %>">
+        </form>
+      </td>
+      <td>
+        <form action="/updateuser" method="post">
+          <button type="submit">UPDATE</button>
+          <input type="hidden" name="email" value="<%= users[i].email %> ">
+        </form>
+      </td>
+    </tr>
+  <% } %> 
+</table>

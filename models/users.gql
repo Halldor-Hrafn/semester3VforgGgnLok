@@ -1,0 +1,10 @@
+type Users {
+  name: [
+    { firstName: String! },
+    { middleName: String },
+    { lastName: String },
+  ],
+  age: Int!,
+  alive: Boolean!,
+  amazingness: String!
+}

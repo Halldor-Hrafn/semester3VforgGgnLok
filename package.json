@@ -4,7 +4,8 @@
   "description": "The final project of vfor3 and gag3",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.jss"
   },
   "author": "Halldór Hrafn Reynisson",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "express": "^4.18.1",
     "express-session": "^1.17.3",
     "faunadb": "^4.7.0",
+    "nodemon": "^2.0.20",
     "path": "^0.12.7"
   },
   "devDependencies": {

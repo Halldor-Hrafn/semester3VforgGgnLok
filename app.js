@@ -6,6 +6,8 @@ require('dotenv/config');
 const frontPage = require('./routes');
 const loginPage = require('./routes/login');
 const registerPage = require('./routes/register');
+const userPage = require('./routes/user');
+const aboutPage = require('./routes/about');
 
 const app = express();
 
@@ -16,15 +18,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use('/', frontPage);
-app.use('/login', loginPage);
-app.use('/register', registerPage);
-
 app.use(session({
   secret: process.env.SESSION_SECRET,
   resave: true,
   saveUninitialized: true,
 }));
+
+app.use('/', frontPage);
+app.use('/login', loginPage);
+app.use('/register', registerPage);
+app.use('/user', userPage);
+app.use('/about', aboutPage);
 
 app.use((req, res) => {
   res.status(404);

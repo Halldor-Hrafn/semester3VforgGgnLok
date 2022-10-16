@@ -12,6 +12,8 @@
 
   <% if (!loggedin) { %> 
   <%- include('include/userWarning') %>
-  <% } %>
+  <% } else { %>
+  <%- include('include/userGreet') %> 
+  <% } %> 
 </body>
 </html>

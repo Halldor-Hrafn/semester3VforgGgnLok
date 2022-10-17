@@ -4,7 +4,7 @@
   background-color: var(--primary-color);
 
   border-color: var(--text-color);
-  border-width: 2px;
+  border-width: 0.15rem;
   border-style: solid;
 }
 
@@ -28,7 +28,7 @@
   display: block;
   color: var(--text-color);
   text-align: center;
-  padding: 14px 16px;
+  padding: 1rem 1rem;
   text-decoration: none;
 }
 

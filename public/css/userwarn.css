@@ -3,7 +3,7 @@
   margin: auto;
   margin-top: 10%;
 
-  border-width: 3px;
+  border-width: 0.15rem;
   border-style: solid;
   border-color: var(--text-color);
 
@@ -12,9 +12,9 @@
 }
 
 #uwarn a button {
-  margin: 5px;
+  margin: 0.5rem;
 
-  border-width: 1px;
+  border-width: 0.1rem;
   border-style: solid;
   border-color: var(--text-color);
 }

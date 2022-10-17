@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const argon2 = require('argon2');
 
-const createUser = require('../db/create/createUser');
+const createUser = require('../db/create/user/createUser');
 
 const router = express.Router();
 

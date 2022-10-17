@@ -8,6 +8,7 @@ const loginPage = require('./routes/login');
 const registerPage = require('./routes/register');
 const userPage = require('./routes/user');
 const aboutPage = require('./routes/about');
+const mangaPage = require('./routes/manga');
 
 const app = express();
 
@@ -29,6 +30,7 @@ app.use('/login', loginPage);
 app.use('/register', registerPage);
 app.use('/user', userPage);
 app.use('/about', aboutPage);
+app.use('/manga', mangaPage);
 
 app.use((req, res) => {
   res.status(404);

@@ -26,6 +26,9 @@ router.post('/', async (req, res) => {
   if (verified) {
     req.session.loggedin = true;
     req.session.username = user.username;
+    if (user.admin) {
+      req.session.admin = true;
+    }
     res.redirect('/');
   } else {
     res.send('Incorrect username/password');

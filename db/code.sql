@@ -1,3 +1,5 @@
+-- DO NOT TOUCH BELOW SHIT
+
 CREATE TABLE users (
   id INTEGER PRIMARY KEY,
   email TEXT UNIQUE,
@@ -48,3 +50,10 @@ CREATE TABLE mangaWarnings (
   idWarning INT,
   PRIMARY KEY (idManga, idWarning)
 );
+
+-- DO NOT TOUCH ABOVE SHIT
+-- You can probably touch this stuff below, maybe
+
+UPDATE users
+SET admin = 1
+WHERE id = 4;

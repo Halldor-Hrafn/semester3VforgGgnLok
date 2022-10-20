@@ -1,7 +1,7 @@
 #navbar {
   display: grid;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 
   border-color: var(--text-color);
   border-width: 0.15rem;
@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 #navbar li {
@@ -33,5 +33,5 @@
 }
 
 #navbar li a:hover {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }

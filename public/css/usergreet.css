@@ -1,0 +1,12 @@
+#greet {
+  width: 97.85vw;
+  height: 92vh;
+
+  margin-top: 1vh;
+
+  border-width: 0.15rem;
+  border-style: solid;
+  border-color: var(--text-color);
+
+  background-color: var(--primary-color);
+}

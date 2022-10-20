@@ -1,3 +1,6 @@
-<div>
+<div id="greet">
   <p>Welcome sir <%= username %>!</p>
+  <% if (admin) { %>
+    <p>Hello there, admin!</p>
+  <% } %>
 </div>

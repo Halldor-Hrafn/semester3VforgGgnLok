@@ -9,7 +9,12 @@
 </head>
 <body>
   <%- include('include/navbar') %> 
+  <%- include('include/mangaNavbar') %> 
 
-  
+  <% if (action === 'home') { %>
+    <p>You are at the home page</p>
+  <% } else if (action === 'create') { %>
+    <p>you are in the create page</p>
+  <% } %> 
 </body>
 </html>

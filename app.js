@@ -10,7 +10,7 @@ const userPage = require('./routes/user');
 const aboutPage = require('./routes/about');
 
 const mangaPage = require('./routes/manga');
-const createMangaPage = require('./routes/create/manga');
+const createMangaPage = require('./routes/create/manga/manga');
 const searchMangaPage = require('./routes/read/manga');
 
 const app = express();
@@ -34,7 +34,7 @@ app.use('/register', registerPage);
 app.use('/user', userPage);
 app.use('/about', aboutPage);
 app.use('/manga', mangaPage);
-app.use('/manga/create', createMangaPage);
+app.use('/createManga', createMangaPage);
 app.use('/manga/search', searchMangaPage);
 
 app.use((req, res) => {

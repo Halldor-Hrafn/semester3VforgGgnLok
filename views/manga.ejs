@@ -15,6 +15,10 @@
     <p>You are at the home page</p>
   <% } else if (action === 'create') { %>
     <p>you are in the create page</p>
+    <%- include('include/mangaCreate') %> 
+  <% } else if (action === 'search') { %>
+    <p>You are on the search page</p>
+    <%- include('include/mangaTable') %> 
   <% } %> 
 </body>
 </html>

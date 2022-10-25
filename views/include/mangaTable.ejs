@@ -1,3 +1,13 @@
 <table>
-  
+  <tr>
+    <td>ID</td><td>NAME</td><td>PUBLISHER</td><td>DESCRIPTION</td>
+  </tr>
+  <% for (let i = 0; i < manga.length; i += 1) { %> 
+    <tr>
+      <td><%= manga[i].id %> </td>
+      <td><%= manga[i].name %> </td>
+      <td><%= manga[i].publisher %> </td>
+      <td><%= manga[i].description %> </td>
+    </tr>
+  <% } %> 
 </table>

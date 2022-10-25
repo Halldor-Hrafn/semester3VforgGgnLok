@@ -57,3 +57,6 @@ CREATE TABLE mangaWarnings (
 UPDATE users
 SET admin = 1
 WHERE id = 4;
+
+INSERT INTO mangas(name, publisher, description)
+VALUES('Osake wa Fuufu ni Natte Kara', 'Shogakukan', 'The "slightly sweet tipsy couple comedy"');
